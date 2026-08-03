@@ -25,4 +25,4 @@ const spacecraft = {
     }
 };
 spacecraft.receiveMessage("Hello from Earth!");
-// the message that is given is undefined when used "this" because arrow functions do not have their own "this" context. Instead, they inherit "this" from the surrounding scope.
+// the message that is given is undefined when used "this" because arrow functions do not have their own "this" context. 
