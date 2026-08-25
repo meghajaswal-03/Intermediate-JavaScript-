@@ -1,15 +1,15 @@
 /* Task 1: Compile Participant Details with Shorthand Property Names */
 // TODO: Construct an object named `participant` with properties for `name`, `age`, and `studyField`. Utilize shorthand property names to simplify your code.
-const nameOfparticipant = "Adeline Smith";
+const nameOfParticipant = "Adeline Smith";
 const age = 28;
 const studyField = "Biology";
-const participant = {nameOfparticipant, age, studyField};
+const participant = {nameOfParticipant, age, studyField};
 console.log(participant);
 /* Task 2: Implement a Shorthand Function for Participant Info */
 // TODO: Copy the `participant` object by adding a shorthand method named `displayInfo` that prints the participant's details using `this` and a template string.
 const participantWithInfo = {...participant,
 displayInfo() {
-    console.log(`Name: ${this.nameOfparticipant}, Age: ${this.age}, Study Field: ${this.studyField}`);
+    console.log(`Name: ${this.nameOfParticipant}, Age: ${this.age}, Study Field: ${this.studyField}`);
 }
 };
 participantWithInfo.displayInfo();
@@ -17,7 +17,7 @@ participantWithInfo.displayInfo();
 // TODO: Echo the above task with an arrow function. Observe the behavior of `this` and explain your findings.
 const participantWithArrowInfo = {...participant,
 displayInfo: () => {
-    console.log(`Name: ${participantWithArrowInfo.nameOfparticipant}, Age: ${participantWithArrowInfo.age}, Study Field: ${participantWithArrowInfo.studyField}`);
+    console.log(`Name: ${participantWithArrowInfo.nameOfParticipant}, Age: ${participantWithArrowInfo.age}, Study Field: ${participantWithArrowInfo.studyField}`);
 }
 };
 participantWithArrowInfo.displayInfo();
